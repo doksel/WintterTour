@@ -32,12 +32,11 @@ header {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        list-style: none;
         border: solid 1px black; }
-        header .wraper nav .menu ul li {
-          list-style: none; }
-          header .wraper nav .menu ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px; }
+        header .wraper nav .menu ul .menu__link {
+          color: white;
+          text-decoration: none;
+          font-size: 20px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylr.css.map */
