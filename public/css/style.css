@@ -1,12 +1,19 @@
-body, ul {
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Racing+Sans+One");
+body, ul, h1, p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700; }
 
 .wraper {
   width: 85vw;
   height: 100%;
-  margin: 0 auto;
-  background: #f06363; }
+  margin: 0 auto; }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; }
 
 header {
   height: 100vh;
@@ -14,30 +21,38 @@ header {
   background-image: url(../images/bg-header1.jpg);
   background-size: cover;
   color: white; }
-  header .wraper nav {
-    height: 100px;
+  header .wraper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 1px black; }
-    header .wraper nav .logo {
-      display: flex; }
-      header .wraper nav .logo__icon {
-        border: solid 1px black; }
-      header .wraper nav .logo__text {
-        font-size: 40px; }
-    header .wraper nav .menu {
-      width: 70%; }
-      header .wraper nav .menu ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        border: solid 1px black; }
-        header .wraper nav .menu ul li {
+    flex-direction: column; }
+    header .wraper nav {
+      height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px; }
+      header .wraper nav .logo {
+        display: flex; }
+        header .wraper nav .logo__text {
+          font-family: 'Racing Sans One';
+          font-size: 35px; }
+      header .wraper nav .menu {
+        width: 70%; }
+        header .wraper nav .menu ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
           list-style: none; }
-          header .wraper nav .menu ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px; }
+    header .wraper .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px; }
+      header .wraper .text h1 {
+        font-size: 60px;
+        margin-bottom: 10px; }
+      header .wraper .text .text__button {
+        border: solid white 2px;
+        padding: 10px 30px;
+        margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */
