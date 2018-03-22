@@ -69,7 +69,7 @@ header{
                 font-size: 60px;
                 margin-bottom: 10px;
             }
-            .text__button{
+            &__button{
                 border: solid white 2px;
                 padding: 10px 30px;
                 margin-top: 50px;
@@ -92,8 +92,9 @@ header{
             font-size: 60px;
         }
         .info__line{
-            height: 3px;
+            height: 4px;
             width: 50px;
+            margin: 20px;
             background-color: rgb(219,56,60);
         }
         .containerBlocks{
@@ -107,7 +108,7 @@ header{
                 align-items:  center;  
                 height: 250px;
                 margin: 20px;
-                .infoBlock__img{
+                &__img{
                     height: 100px;
                     width: 100px;
                     border: rgb(37,101,133) solid 1px;
@@ -116,7 +117,7 @@ header{
                     text-align: center;
                     line-height: 130px;
                 }
-                .infoBlock__line{
+                &__line{
                     height: 2px;
                     width: 30px;
                     background-color: rgb(37,101,133);

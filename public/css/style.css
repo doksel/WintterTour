@@ -54,7 +54,7 @@ header {
       header .wraper .text h1 {
         font-size: 60px;
         margin-bottom: 10px; }
-      header .wraper .text .text__button {
+      header .wraper .text__button {
         border: solid white 2px;
         padding: 10px 30px;
         margin-top: 50px; }
@@ -72,8 +72,9 @@ header {
     .info .wraper h1 {
       font-size: 60px; }
     .info .wraper .info__line {
-      height: 3px;
+      height: 4px;
       width: 50px;
+      margin: 20px;
       background-color: #db383c; }
     .info .wraper .containerBlocks {
       display: flex;
@@ -86,7 +87,7 @@ header {
         align-items: center;
         height: 250px;
         margin: 20px; }
-        .info .wraper .containerBlocks .infoBlock .infoBlock__img {
+        .info .wraper .containerBlocks .infoBlock__img {
           height: 100px;
           width: 100px;
           border: #256585 solid 1px;
@@ -94,7 +95,7 @@ header {
           margin: 15px;
           text-align: center;
           line-height: 130px; }
-        .info .wraper .containerBlocks .infoBlock .infoBlock__line {
+        .info .wraper .containerBlocks .infoBlock__line {
           height: 2px;
           width: 30px;
           background-color: #256585;
