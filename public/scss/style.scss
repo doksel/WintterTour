@@ -2,6 +2,8 @@
 // font-family: 'PT Sans', sans-serif;
 // font-family: 'Racing Sans One', cursive;
 
+// sass --watch public/scss/style.scss:public/css/style.css
+
 body, ul, h1, p{
     margin: 0;
     padding: 0;
@@ -38,8 +40,10 @@ header{
             margin-bottom: 90px;
             .logo{
                 display: flex;
-                // &__icon{
-                // }
+                img{
+                    height: 40px;
+                    width: 60px;
+                }
                 &__text{
                     font-family: 'Racing Sans One';
                     font-size: 35px;
@@ -60,6 +64,7 @@ header{
             flex-direction: column;
             align-items: center;
             font-size: 18px;
+            text-shadow: 1px 1px 0px black;
             h1{
                 font-size: 60px;
                 margin-bottom: 10px;
@@ -71,5 +76,53 @@ header{
             }
         }
 
+    }
+}
+.info{
+    height: 85vh;
+    min-height: 500px;
+    background-color: rgb(11,64,95);
+    color: white;
+    .wraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:  center;
+        h1{
+            font-size: 60px;
+        }
+        .info__line{
+            height: 3px;
+            width: 50px;
+            background-color: rgb(219,56,60);
+        }
+        .containerBlocks{
+            display: flex;
+            justify-content: space-between;
+            align-items:  center;
+            .infoBlock{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:  center;  
+                height: 250px;
+                margin: 20px;
+                .infoBlock__img{
+                    height: 100px;
+                    width: 100px;
+                    border: rgb(37,101,133) solid 1px;
+                    border-radius: 50%;
+                    margin: 15px;
+                    text-align: center;
+                    line-height: 130px;
+                }
+                .infoBlock__line{
+                    height: 2px;
+                    width: 30px;
+                    background-color: rgb(37,101,133);
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
     }
 }
