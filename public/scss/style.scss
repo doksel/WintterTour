@@ -24,13 +24,13 @@ a{
 } 
 
 h1{
-    font-size: 60px;
+    font-size: 50px;
     color: white;
 }
 
 header{
     height: 100vh;
-    min-height: 500px;
+    min-height: 600px;
     background-image: url(../images/bg-header1.jpg);
     background-size: cover;
     color: white;
@@ -64,6 +64,9 @@ header{
                     a:hover{
                         background-color: rgb(219,56,60);                
                     }
+                    a:active{
+                        background-color: rgb(219,56,60);                
+                    }
                 }
             }
         }
@@ -78,9 +81,17 @@ header{
             }
             &__button{
                 border: solid white 2px;
-                padding: 10px 30px;
-                margin-top: 50px;
+                height: 50px;
+                width: 200px;
+                margin: 50px;
+                text-align: center;
                 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    line-height: 50px;
+                }
             }
         }
 
@@ -133,41 +144,130 @@ header{
     }
 }
 .bestTrips{
-    height: 750px;
+    height: 150vh;
+    min-height: 1000px;
+    background-image: url(../images/bg-trips1.jpg);
+    background-size: cover;
+    position: relative;
+    &__background{
+        background-color: white;
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; 
+        height: 100%;
+        opacity: 0.7;
+        z-index: 0;
+    }
     .wraper{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:  center;   
+        align-items:  center;  
+        position: relative;
+        z-index: 3; 
         h1{
-            text-shadow: 1px 1px 0px black;
+            color: rgb(3,57,88);
         }   
-        .info__line{
-            height: 2px;
-            width: 30px;
+        .bestTrips__line{
+            height: 4px;
+            width: 50px;
             background-color: rgb(3,57,88);
-            margin: 0 0 15px 0;
+            margin: 30px;
         }
         .bestTrips__main{
             display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 250px 250px;
+            grid-gap: 30px;
             .trips{
-                height: 500px;
-                margin: 10px;
-                background-color: red; 
+                a{
+                    display: block;
+                    position: relative;
+                    width: 100%; 
+                    height: 100%;
+                    .trips__price{
+                        position: absolute;
+                        left:0;
+                        top:10px;
+                        padding: 5px 20px;
+                        background-color: rgb(219,56,60);
+                    }
+                    h2{
+                        display: block;
+                        position: absolute; 
+                        width: 100%; 
+                        text-align: center;
+                        top:50%;
+                        text-shadow: 1px 1px 0px black;
+                    }
+                }
+            }
+            .trips__bg1{
+                background-image: url(../images/bg-trips1.jpg);
+                background-size: cover;
+            }
+            .trips__bg2{
+                background-image: url(../images/bg-trips2.jpg);
+                background-size: cover;
+            }
+            .trips__bg3{
+                background-image: url(../images/bg-trips3.jpg);
+                background-size: cover;
+
+            }
+            .trips__bg4{
+                background-image: url(../images/bg-trips4.jpg);
+                background-size: cover;
             }
         }
-        .trips__button{
-            padding: 10px 30px;
-            margin-top: 50px;
+        .bestTrips__button{
+            height: 50px;
+            width: 250px;
+            margin: 50px;
+            text-align: center;
             background-color: rgb(219,56,60);
             a{
+                display: block;
                 height: 100%;
                 width: 100%;
+                line-height: 50px;
             }
         }
-        .trips__button:hover{
+        .bestTrips__button:hover{
             background-color: rgb(33,80,108);            
         }
     }
 }
-// 
+.bestTripsDown{
+    height: 400px;
+    background-color: rgb(11,64,95);
+    .wraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: white;
+        }
+        .bestTripsDown__button{
+            height: 50px;
+            width: 170px;
+            margin: 50px;
+            text-align: center;
+            background-color: rgb(219,56,60);
+            a{
+                display: block;
+                height: 100%;
+                width: 100%;
+                line-height: 50px;
+            }
+        }
+    }
+}
+.latestNews{
+    .wraper{
+    }
+}
+// background-color: rgb(148,148,148)
+// background-color: rgb(57,58,60)
