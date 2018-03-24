@@ -19,6 +19,24 @@ h1 {
   font-size: 50px;
   color: white; }
 
+.button {
+  height: 50px;
+  width: 170px;
+  margin: 50px;
+  text-align: center;
+  background-color: #db383c; }
+  .button a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px; }
+
+.line {
+  height: 4px;
+  width: 50px;
+  margin: 20px;
+  background-color: #db383c; }
+
 header {
   height: 100vh;
   min-height: 600px;
@@ -63,16 +81,9 @@ header {
         margin-bottom: 10px; }
       header .wraper .text__button {
         border: solid white 2px;
-        height: 50px;
         width: 200px;
-        margin: 50px;
-        text-align: center;
+        background: none;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-        header .wraper .text__button a {
-          display: block;
-          height: 100%;
-          width: 100%;
-          line-height: 50px; }
 
 .info {
   height: 85vh;
@@ -84,11 +95,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .info .wraper .info__line {
-      height: 4px;
-      width: 50px;
-      margin: 20px;
-      background-color: #db383c; }
     .info .wraper .containerBlocks {
       display: flex;
       justify-content: space-between;
@@ -139,10 +145,7 @@ header {
     .bestTrips .wraper h1 {
       color: #033958; }
     .bestTrips .wraper .bestTrips__line {
-      height: 4px;
-      width: 50px;
-      background-color: #033958;
-      margin: 30px; }
+      background-color: #033958; }
     .bestTrips .wraper .bestTrips__main {
       display: grid;
       width: 100%;
@@ -180,16 +183,7 @@ header {
         background-image: url(../images/bg-trips4.jpg);
         background-size: cover; }
     .bestTrips .wraper .bestTrips__button {
-      height: 50px;
-      width: 250px;
-      margin: 50px;
-      text-align: center;
-      background-color: #db383c; }
-      .bestTrips .wraper .bestTrips__button a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 50px; }
+      width: 250px; }
     .bestTrips .wraper .bestTrips__button:hover {
       background-color: #21506c; }
 
@@ -203,16 +197,5 @@ header {
     align-items: center; }
     .bestTripsDown .wraper h3 {
       color: white; }
-    .bestTripsDown .wraper .bestTripsDown__button {
-      height: 50px;
-      width: 170px;
-      margin: 50px;
-      text-align: center;
-      background-color: #db383c; }
-      .bestTripsDown .wraper .bestTripsDown__button a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 50px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,6 +28,28 @@ h1{
     color: white;
 }
 
+.button{
+    height: 50px;
+    width: 170px;
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(219,56,60);
+    a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+    }
+}
+
+.line{
+    height: 4px;
+    width: 50px;
+    margin: 20px;
+    background-color: rgb(219,56,60);
+}
+
+
 header{
     height: 100vh;
     min-height: 600px;
@@ -81,17 +103,9 @@ header{
             }
             &__button{
                 border: solid white 2px;
-                height: 50px;
                 width: 200px;
-                margin: 50px;
-                text-align: center;
+                background: none;
                 box-shadow: 0 0 10px rgba(0,0,0,0.5);
-                a{
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    line-height: 50px;
-                }
             }
         }
 
@@ -107,12 +121,6 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items:  center;
-        .info__line{
-            height: 4px;
-            width: 50px;
-            margin: 20px;
-            background-color: rgb(219,56,60);
-        }
         .containerBlocks{
             display: flex;
             justify-content: space-between;
@@ -169,10 +177,7 @@ header{
             color: rgb(3,57,88);
         }   
         .bestTrips__line{
-            height: 4px;
-            width: 50px;
             background-color: rgb(3,57,88);
-            margin: 30px;
         }
         .bestTrips__main{
             display: grid;
@@ -222,17 +227,7 @@ header{
             }
         }
         .bestTrips__button{
-            height: 50px;
             width: 250px;
-            margin: 50px;
-            text-align: center;
-            background-color: rgb(219,56,60);
-            a{
-                display: block;
-                height: 100%;
-                width: 100%;
-                line-height: 50px;
-            }
         }
         .bestTrips__button:hover{
             background-color: rgb(33,80,108);            
@@ -250,24 +245,11 @@ header{
         h3{
             color: white;
         }
-        .bestTripsDown__button{
-            height: 50px;
-            width: 170px;
-            margin: 50px;
-            text-align: center;
-            background-color: rgb(219,56,60);
-            a{
-                display: block;
-                height: 100%;
-                width: 100%;
-                line-height: 50px;
-            }
-        }
     }
 }
-.latestNews{
-    .wraper{
-    }
-}
+// .latestNews{
+//     .wraper{
+//     }
+// }
 // background-color: rgb(148,148,148)
 // background-color: rgb(57,58,60)
