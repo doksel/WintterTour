@@ -8,12 +8,17 @@ body, ul, h1, p {
 .wraper {
   width: 85vw;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 a {
   color: white;
   text-decoration: none;
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 5px 10px; }
 
 h1 {
   font-size: 50px;
@@ -29,7 +34,8 @@ h1 {
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 50px; }
+    line-height: 50px;
+    padding: 0; }
 
 .line {
   height: 4px;
@@ -40,12 +46,11 @@ h1 {
 header {
   height: 100vh;
   min-height: 600px;
-  background-image: url(../images/bg-header1.jpg);
+  background: url(../images/bg-header1.jpg);
   background-size: cover;
   color: white; }
   header .wraper {
-    display: flex;
-    flex-direction: column; }
+    align-items: stretch; }
     header .wraper nav {
       height: 120px;
       display: flex;
@@ -90,40 +95,35 @@ header {
   min-height: 500px;
   background-color: #0b405f;
   color: white; }
-  .info .wraper {
+  .info .wraper .containerBlocks {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
-    .info .wraper .containerBlocks {
+    .info .wraper .containerBlocks .infoBlock {
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .info .wraper .containerBlocks .infoBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 250px;
-        margin: 20px; }
-        .info .wraper .containerBlocks .infoBlock__img {
-          height: 100px;
-          width: 100px;
-          border: #256585 solid 1px;
-          border-radius: 50%;
-          margin: 15px;
-          text-align: center;
-          line-height: 130px; }
-        .info .wraper .containerBlocks .infoBlock__line {
-          height: 2px;
-          width: 30px;
-          background-color: #256585;
-          margin: 0 0 15px 0; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      margin: 20px; }
+      .info .wraper .containerBlocks .infoBlock__img {
+        height: 100px;
+        width: 100px;
+        border: #256585 solid 1px;
+        border-radius: 50%;
+        margin: 15px;
+        text-align: center;
+        line-height: 130px; }
+      .info .wraper .containerBlocks .infoBlock__line {
+        height: 2px;
+        width: 30px;
+        background-color: #256585;
+        margin: 0 0 15px 0; }
 
 .bestTrips {
   height: 150vh;
   min-height: 1000px;
-  background-image: url(../images/bg-trips1.jpg);
+  background: url(../images/bg-trips1.jpg);
   background-size: cover;
   position: relative; }
   .bestTrips__background {
@@ -136,10 +136,6 @@ header {
     opacity: 0.7;
     z-index: 0; }
   .bestTrips .wraper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     z-index: 3; }
     .bestTrips .wraper h1 {
@@ -162,7 +158,7 @@ header {
           left: 0;
           top: 10px;
           padding: 5px 20px;
-          background-color: #db383c; }
+          background: #db383c; }
         .bestTrips .wraper .bestTrips__main .trips a h2 {
           display: block;
           position: absolute;
@@ -170,32 +166,100 @@ header {
           text-align: center;
           top: 50%;
           text-shadow: 1px 1px 0px black; }
-      .bestTrips .wraper .bestTrips__main .trips__bg1 {
-        background-image: url(../images/bg-trips1.jpg);
+      .bestTrips .wraper .bestTrips__main .trips-bg1 {
+        background: url(../images/bg-trips1.jpg);
         background-size: cover; }
-      .bestTrips .wraper .bestTrips__main .trips__bg2 {
-        background-image: url(../images/bg-trips2.jpg);
+      .bestTrips .wraper .bestTrips__main .trips-bg2 {
+        background: url(../images/bg-trips2.jpg);
         background-size: cover; }
-      .bestTrips .wraper .bestTrips__main .trips__bg3 {
-        background-image: url(../images/bg-trips3.jpg);
+      .bestTrips .wraper .bestTrips__main .trips-bg3 {
+        background: url(../images/bg-trips3.jpg);
         background-size: cover; }
-      .bestTrips .wraper .bestTrips__main .trips__bg4 {
-        background-image: url(../images/bg-trips4.jpg);
+      .bestTrips .wraper .bestTrips__main .trips-bg4 {
+        background: url(../images/bg-trips4.jpg);
         background-size: cover; }
     .bestTrips .wraper .bestTrips__button {
       width: 250px; }
     .bestTrips .wraper .bestTrips__button:hover {
-      background-color: #21506c; }
+      background: #21506c; }
 
 .bestTripsDown {
   height: 400px;
   background-color: #0b405f; }
-  .bestTripsDown .wraper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .bestTripsDown .wraper h3 {
+  .bestTripsDown .wraper h3 {
+    color: white; }
+  .bestTripsDown .wraper .bestTripsDown__button:hover {
+    background: beige; }
+    .bestTripsDown .wraper .bestTripsDown__button:hover a {
+      color: #393a3c; }
+
+.latestNews {
+  background: url(../images/bg-latestNews.jpg);
+  background-size: cover; }
+  .latestNews .wraper h1 {
+    text-shadow: 1px 1px 0px black;
+    color: #393a3c;
+    margin-top: 50px; }
+  .latestNews .wraper .latestNews__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
+    .latestNews .wraper .latestNews__main .news {
+      background: white; }
+      .latestNews .wraper .latestNews__main .news__img {
+        width: 100%;
+        height: 200px; }
+      .latestNews .wraper .latestNews__main .news__img-bg1 {
+        background: url(../images/bg-latestNews1.jpg);
+        background-size: cover; }
+      .latestNews .wraper .latestNews__main .news__img-bg2 {
+        background: url(../images/bg-latestNews2.jpg);
+        background-size: cover; }
+      .latestNews .wraper .latestNews__main .news__img-bg3 {
+        background: url(../images/bg-latestNews3.jpg);
+        background-size: cover; }
+      .latestNews .wraper .latestNews__main .news__info, .latestNews .wraper .latestNews__main .news__text, .latestNews .wraper .latestNews__main .news__links {
+        padding: 10px; }
+      .latestNews .wraper .latestNews__main .news__info, .latestNews .wraper .latestNews__main .news a {
+        color: #949494; }
+      .latestNews .wraper .latestNews__main .news__info {
+        display: grid;
+        grid-template-columns: 1fr 2fr; }
+      .latestNews .wraper .latestNews__main .news h3 {
+        color: #db383c; }
+      .latestNews .wraper .latestNews__main .news__text {
+        color: #5a5a5a; }
+      .latestNews .wraper .latestNews__main .news__links a {
+        background: #0772ba;
+        padding: 0 5px;
+        color: white; }
+      .latestNews .wraper .latestNews__main .news__links a:hover {
+        background: #db383c; }
+  .latestNews .wraper .latestNews__button:hover {
+    background: #21506c; }
+  .latestNews .wraper .latestNews__footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+    height: 200px; }
+    .latestNews .wraper .latestNews__footer .latestNews__footer-wraper {
+      background-color: #0b405f;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 0;
+      margin-left: -10%; }
+    .latestNews .wraper .latestNews__footer h1, .latestNews .wraper .latestNews__footer .latestNews__button {
+      position: relative;
+      z-index: 3;
+      margin: auto;
       color: white; }
+    .latestNews .wraper .latestNews__footer .latestNews__button:hover {
+      background: beige; }
+      .latestNews .wraper .latestNews__footer .latestNews__button:hover a {
+        color: #393a3c; }
 
 /*# sourceMappingURL=style.css.map */
